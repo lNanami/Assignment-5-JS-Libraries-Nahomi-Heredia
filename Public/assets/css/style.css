@@ -1,0 +1,101 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: white;
+}
+
+header {
+  background: linear-gradient(to bottom, #00bcd4, #111);
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* Typed.js animated text */
+.typed-text {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+/* Slider styles */
+.slide-img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.city {
+  background-image: url("../images/city.jpg");
+}
+
+.forest {
+  background-image: url("../images/forest.jpg");
+}
+
+.beach {
+  background-image: url("../images/beach.jpg");
+}
+
+.mountain {
+  background-image: url("../images/mountain.jpeg");
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-img {
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 40px 20px;
+}
+
+footer {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-img {
+    width: 90%;
+  }
+}
